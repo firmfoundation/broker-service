@@ -2,11 +2,18 @@
 
 ## usage
 
+starts the service using docker container
 ```
-  make up         will start the service using docker container
+  make up         
 
-  make down       will stop the service
+```
+stops the service
+```
+  make down       
 
-  make build-up   will re build the service and start the service    
+```
+builds the service and start the service    
+```
+  make build-up   
 
 ```
