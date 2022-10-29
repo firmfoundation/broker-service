@@ -1,9 +1,11 @@
 version: '3'
 services:
- broker-service:
-  build:
-    context: ./
-    dockerfile: ./dockerfile
-  restart: always
-  ports:
-    - "8000:2727"
+  broker-service:
+    container_name: broker-service
+    build:
+      context: ./
+      dockerfile: ./dockerfile
+    restart: always
+    ports:
+      - "8000:80"
+

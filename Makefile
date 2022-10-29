@@ -14,8 +14,15 @@ build-up:
 	docker compose up
 	@echo "docker image built and started!"
 
+## build locally
+build-local:
+	@echo "build the project locally. go need to be installed."
+	go build -o broker-service ./cmd/app
+	@echo "check built app"
+
 ## down : stop service
 down: 
 	@echo "stopping service using docker compose..."
 	docker compose down
 	@echo "done!"
+
